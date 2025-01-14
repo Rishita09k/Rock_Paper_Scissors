@@ -10,24 +10,18 @@
 <h1>Rock Paper Scissors</h1>
 
 <div class="choices">
-    <div class="choice" id="rock"><img src="images/rock.png"></div>
-    <div class="choice" id="paper"><img src="images/paper.png"></div>
-    <div class="choice" id="scissors"><img src="images/scissors.png"></div>
-</div>
-
-<div class="score-board">
-    <div class="score">
-        <p id="user-score">0</p>
-        <p>You</p>
+    <div class="choice"><button onclick="playGame(0)"><img src="images/rock.png"></button></div>
+    <div class="choice"><button onclick="playGame(1)"><img src="images/paper.png"></button></div>
+    <div class="choice"><button onclick="playGame(2)"><img src="images/scissors.png"></button></div>
     </div>
-    <div class="score">
-        <p id="comp-score">0</p>
-        <p>Comp</p>
-    </div>
-</div>
 
-<div class="msg-container">
-    <p id="msg">Play</p>
+    <div class="score-board">
+        <p class="score" id="user-choice">Your choice: </p>
+        <p class="score" id="computer-choice">Computer's choice: </p>
+    </div>
+
+    <div class="msg-container">
+    <h2 id="game-result">Result: </h2>
 </div>
 
 </body>
